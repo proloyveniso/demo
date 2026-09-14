@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111111">
+<title>VENISO — Managed SaaS for Telecom VAS, Gaming Subscriptions, M-Health &amp; Casual Gaming</title>
+<meta name="description" content="VENISO builds proprietary platforms powering telecom operators worldwide. B2B Managed SaaS for CMS, package management and billing. Consumer products: MOITRIBE gaming subscriptions, M-Health virtual hospital, and MUDGAMES ad-powered casual gaming. 15 Bn+ DCB transactions, 150+ telecom deployments, 1 Bn+ users since 2012.">
+<meta name="keywords" content="telecom VAS, managed SaaS, DCB, carrier billing, MOITRIBE, MUDGAMES, M-Health, Top Doctors Online, gaming subscription, hyper casual gaming, telecom platforms, VENISO, OBIGINGAMES, HTML5 games">
+<meta name="author" content="VENISO Solutions Private Limited">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<link rel="canonical" href="https://veniso.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="VENISO — Managed SaaS for Telecom VAS, Gaming &amp; M-Health">
+<meta property="og:description" content="Proprietary platforms powering telecom operators and consumer services since 2012. Managed SaaS · MOITRIBE · M-Health · MUDGAMES.">
+<meta property="og:url" content="https://veniso.com/">
+<meta property="og:site_name" content="VENISO">
+<meta property="og:locale" content="en_IN">
+<meta property="og:image" content="https://veniso.com/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="VENISO — Telecom VAS, Gaming &amp; M-Health Platforms">
+<meta name="twitter:description" content="B2B Managed SaaS + consumer products MOITRIBE, M-Health, MUDGAMES. 15Bn+ DCB transactions, 150+ telecom deployments since 2012.">
+<meta name="twitter:image" content="https://veniso.com/assets/og-cover.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;400;500;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<!-- Schema.org structured data -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"VENISO Solutions Private Limited","alternateName":"VENISO","url":"https://veniso.com","logo":"https://veniso.com/assets/web/veniso_logo.png","foundingDate":"2012","description":"Technology-driven products company building proprietary platforms for telecom operators and consumer services across payments, content distribution, gaming, advertising, analytics and m-health.","address":{"@type":"PostalAddress","streetAddress":"2nd Floor, 1-98/5/2/1, Block-B, Eternal Samyuktha, Vittal Rao Nagar, Madhapur","addressLocality":"Hyderabad","addressRegion":"Telangana","postalCode":"500081","addressCountry":"IN"},"contactPoint":[{"@type":"ContactPoint","email":"business@veniso.com","contactType":"sales","availableLanguage":["en","hi"]}],"sameAs":["https://www.linkedin.com/company/veniso"],"areaServed":["IN","AE","APAC","MEA","SEA"],"numberOfEmployees":{"@type":"QuantitativeValue","minValue":50,"maxValue":200}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does VENISO do?","acceptedAnswer":{"@type":"Answer","text":"VENISO is a technology-driven products company founded in 2012 that builds proprietary platforms powering telecom operators and consumer services — Managed SaaS for CMS, package management and billing, plus MOITRIBE (gaming subscriptions), M-Health/Top Doctors Online (virtual hospital) and MUDGAMES (ad-powered hyper-casual gaming)."}},{"@type":"Question","name":"What is MOITRIBE?","acceptedAnswer":{"@type":"Answer","text":"MOITRIBE is VENISO's telecom VAS gaming subscription service offering eat-all-you-can access to 100+ HTML5 titles and tournament-based competitive gaming with leaderboards, chat and rewards."}},{"@type":"Question","name":"What is MUDGAMES?","acceptedAnswer":{"@type":"Answer","text":"MUDGAMES is VENISO's advertisement-powered hyper-casual gaming platform with 127 titles across 9 genres, playable instantly on any browser without download."}},{"@type":"Question","name":"How many DCB transactions has VENISO processed?","acceptedAnswer":{"@type":"Answer","text":"Over 15 billion direct carrier billing (DCB) transactions serving 1 billion+ unique users with 40 million telco transactions per day at peak billing of 500 RPS."}}]}
+</script>
+
+<style>
+/* ── RESET & TOKENS ─────────────────────────────────── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --black:#111111;
+  --black-soft:#1a1a1a;
+  --black-line:#2a2a2e;
+  --white:#ffffff;
+  --white-soft:#f6f6f8;
+  --red:#c41e3a;
+  --red-dark:#a8172f;
+  --red-tint:#fdf3f5;
+  --grey-body:#43434a;
+  --grey-muted:#8f8f96;
+  --grey-faint:#6a6a72;
+  --border-light:#e4e4e9;
+  --border-dark:rgba(255,255,255,.12);
+  --font-sans:'Archivo',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --font-mono:'IBM Plex Mono',ui-monospace,'SF Mono',monospace;
+  --container:1440px;
+  --radius:20px;
+  --ease:cubic-bezier(.22,.68,.3,1);
+  --ease-out:cubic-bezier(0,0,.2,1);
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;tab-size:4}
+body{background:var(--black);color:var(--white);font-family:var(--font-sans);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:var(--red);text-decoration:none;transition:color .15s var(--ease)}
+a:hover{color:var(--red-dark)}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+::selection{background:var(--red);color:#fff}
+
+/* ── PROGRESS BAR ──────────────────────────────────── */
+.progress-bar{position:fixed;top:0;left:0;height:2px;background:var(--red);width:0%;z-index:9999;transition:width .1s linear;will-change:width}
+
+/* ── TYPOGRAPHY ──────────────────────────────────────*/
+h1,h2,h3,h4{font-weight:900;letter-spacing:-.03em;line-height:1.04}
+.mono{font-family:var(--font-mono);font-weight:400;letter-spacing:.2em;text-transform:uppercase;font-size:12px}
+.eyebrow{font-family:var(--font-mono);letter-spacing:.3em;text-transform:uppercase;color:var(--red);font-size:12px;font-weight:500}
+
+/* ── LAYOUT ─────────────────────────────────────────*/
+.wrap{max-width:var(--container);margin:0 auto;padding:0 24px;width:100%}
+@media(min-width:768px){.wrap{padding:0 48px}}
+@media(min-width:1024px){.wrap{padding:0 64px}}
+.section{padding:72px 0}
+@media(min-width:768px){.section{padding:96px 0}}
+@media(min-width:1024px){.section{padding:120px 0}}
+.section--dark{background:var(--black);color:var(--white)}
+.section--light{background:var(--white);color:var(--black)}
+.section--red{background:var(--red);color:var(--white)}
+
+.section__head{display:flex;justify-content:space-between;align-items:baseline;gap:24px;padding-bottom:20px;border-bottom:2px solid currentColor;margin-bottom:44px;flex-wrap:wrap}
+.section--light .section__head{border-color:var(--black)}
+.section--dark .section__head{border-color:rgba(255,255,255,.25)}
+.section__head .right{font-family:var(--font-mono);font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--grey-muted)}
+
+h2.h-lead{font-size:clamp(32px,4.4vw,62px);max-width:1400px;margin-bottom:24px}
+h3.h-sub{font-size:clamp(22px,2.2vw,32px);font-weight:800;letter-spacing:-.02em;line-height:1.15}
+p.body{font-size:clamp(16px,1.1vw,18px);line-height:1.65}
+.section--light p.body{color:var(--grey-body)}
+.section--dark p.body{color:#c0c0c8}
+
+/* ── DEVICE ASPECT RATIO CONTROL ─────────────────── */
+/* Portrait phones: tighten vertical rhythm */
+@media(max-aspect-ratio:9/16){
+  .section{padding:56px 0}
+  h2.h-lead{font-size:clamp(28px,8vw,48px)}
+}
+/* Landscape tablets: moderate */
+@media(min-aspect-ratio:16/9) and (max-width:1199px){
+  .hero{padding:56px 0 72px}
+  .section{padding:64px 0}
+}
+/* Ultra-wide 21:9 */
+@media(min-aspect-ratio:21/9){
+  .wrap{padding:0 120px}
+  .hero{padding:56px 0 72px}
+}
+
+/* ── BUTTONS ─────────────────────────────────────── */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:100px;font-weight:700;font-size:14px;letter-spacing:.04em;transition:all .18s var(--ease);border:1.5px solid transparent;text-transform:uppercase;font-family:var(--font-mono)}
+.btn--red{background:var(--red);color:#fff}
+.btn--red:hover{background:var(--red-dark);color:#fff;transform:translateY(-1px);box-shadow:0 6px 24px rgba(196,30,58,.4)}
+.btn--ghost{border-color:rgba(255,255,255,.28);color:#fff}
+.btn--ghost:hover{border-color:#fff;background:rgba(255,255,255,.06);color:#fff}
+.btn--dark{border-color:var(--black);color:var(--black)}
+.btn--dark:hover{background:var(--black);color:#fff}
+.btn--outline-red{border-color:var(--red);color:var(--red)}
+.btn--outline-red:hover{background:var(--red);color:#fff}
+
+/* ── NAV ─────────────────────────────────────────── */
+.nav{position:sticky;top:0;z-index:200;background:rgba(17,17,17,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--border-dark);transition:box-shadow .3s var(--ease)}
+.nav.scrolled{box-shadow:0 4px 40px rgba(0,0,0,.6)}
+.nav__inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:20px}
+.nav-logo{display:inline-flex;align-items:center;flex-shrink:0}
+.logo-img{height:30px;width:auto;display:block}
+.nav__links{display:none;gap:32px;align-items:center;font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+.nav__links a{color:#c0c0c8;transition:color .15s var(--ease)}
+.nav__links a:hover{color:#fff}
+.nav__toggle{display:flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#fff;padding:8px 14px;border:1px solid var(--border-dark);border-radius:100px;transition:border-color .15s}
+.nav__toggle:hover{border-color:rgba(255,255,255,.4)}
+@media(min-width:1024px){.nav__links{display:flex}.nav__toggle{display:none}}
+.nav__mobile{display:none;flex-direction:column;padding:8px 0 16px;border-top:1px solid var(--border-dark)}
+.nav__mobile.is-open{display:flex}
+.nav__mobile a{font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#c0c0c8;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.nav__mobile a:last-child{border-bottom:0}
+@media(min-width:1024px){.nav__mobile{display:none!important}}
+
+/* ── HERO ─────────────────────────────────────────── */
+.hero{position:relative;padding:72px 0 88px;overflow:hidden}
+@media(min-width:1024px){.hero{padding:96px 0 120px}}
+.hero__glow{position:absolute;right:-180px;top:-220px;width:800px;height:800px;border-radius:50%;background:radial-gradient(circle,rgba(196,30,58,.38) 0%,transparent 68%);pointer-events:none;animation:pulse-glow 8s ease-in-out infinite}
+.hero__glow2{position:absolute;left:-300px;bottom:-200px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(196,30,58,.18) 0%,transparent 70%);pointer-events:none;animation:pulse-glow 11s ease-in-out infinite reverse}
+@keyframes pulse-glow{0%,100%{opacity:.8;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
+.hero__logo-wrap{display:flex;align-items:center;gap:20px;flex-wrap:wrap;padding-bottom:56px;position:relative}
+.hero__logo-img{height:44px;width:auto}
+@media(min-width:768px){.hero__logo-img{height:54px}}
+.hero__logo-divider{width:1px;height:44px;background:rgba(255,255,255,.2)}
+.hero__logo-meta{font-family:var(--font-mono);font-size:12px;letter-spacing:.22em;color:rgba(255,255,255,.85);line-height:1.7;text-transform:uppercase}
+.hero__logo-meta span{color:var(--grey-muted)}
+.hero__eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.36em;color:var(--red);margin-bottom:24px;text-transform:uppercase}
+.hero h1{font-size:clamp(40px,7vw,108px);font-weight:200;letter-spacing:.015em;line-height:1;color:#fff;margin-bottom:24px}
+.hero h1 b{font-weight:900;letter-spacing:-.03em}
+.hero h1 em{font-style:normal;color:var(--red);font-weight:900;letter-spacing:-.03em}
+.hero__sub{font-size:clamp(18px,2vw,30px);font-weight:700;line-height:1.18;max-width:1100px;letter-spacing:-.012em;margin-bottom:18px;color:#fff}
+.hero__desc{font-size:clamp(15px,1.1vw,18px);line-height:1.6;color:#b0b0b8;max-width:860px;margin-bottom:36px}
+.hero__cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:60px}
+.hero__stats-wrap{display:grid;grid-template-columns:1fr;gap:28px;padding-top:44px;border-top:1px solid var(--border-dark)}
+@media(min-width:600px){.hero__stats-wrap{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:900px){.hero__stats-wrap{grid-template-columns:repeat(4,1fr)}}
+.hero__stat .val{font-size:clamp(26px,2.8vw,42px);font-weight:900;color:var(--red);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.hero__stat .lbl{font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;color:var(--grey-muted);text-transform:uppercase;margin-top:6px}
+.hero__locations{font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;color:var(--grey-faint);text-transform:uppercase;text-align:right;margin-top:16px}
+@media(min-width:768px){.hero__stats-footer{display:flex;justify-content:space-between;align-items:flex-end;gap:32px}}
+
+/* ── TRUST BAR ────────────────────────────────────── */
+.trustbar{background:var(--red);color:#fff;padding:36px 0}
+.trustbar__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px 36px}
+@media(min-width:640px){.trustbar__grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1024px){.trustbar__grid{grid-template-columns:repeat(5,1fr)}}
+.trustbar .val{font-size:clamp(26px,2.4vw,38px);font-weight:900;letter-spacing:-.02em;line-height:1}
+.trustbar .lbl{font-family:var(--font-mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#fdf3f5;margin-top:6px}
+
+/* ── DIVISION GRID ────────────────────────────────── */
+.divisions{display:grid;grid-template-columns:1fr;gap:2px;background:var(--border-light);border-radius:var(--radius);overflow:hidden}
+@media(min-width:640px){.divisions{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.divisions{grid-template-columns:repeat(4,1fr)}}
+.division{background:var(--white);padding:32px 26px;display:flex;flex-direction:column;gap:14px;transition:background .2s var(--ease),transform .2s var(--ease)}
+.division:hover{background:var(--white-soft);transform:translateY(-2px)}
+.division .num{font-family:var(--font-mono);font-size:11px;letter-spacing:.24em;color:var(--red);text-transform:uppercase}
+.division h3{font-size:22px;font-weight:800;letter-spacing:-.015em;color:var(--black)}
+.division p{font-size:14px;line-height:1.55;color:var(--grey-body)}
+.division .tag{align-self:flex-start;margin-top:auto;font-family:var(--font-mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--black);border:1.5px solid var(--border-light);padding:5px 12px;border-radius:100px}
+.division--dark{background:var(--black);color:#fff}
+.division--dark:hover{background:var(--black-soft)}
+.division--dark h3,.division--dark p{color:#fff}
+.division--dark p{color:#c0c0c8}
+.division--dark .tag{border-color:var(--border-dark);color:#c0c0c8}
+
+/* ── PILLARS ──────────────────────────────────────── */
+.pillars{display:grid;grid-template-columns:1fr;gap:2px;background:var(--border-dark);border-radius:var(--radius);overflow:hidden}
+@media(min-width:768px){.pillars{grid-template-columns:repeat(3,1fr)}}
+.pillar{background:var(--black-soft);padding:36px 30px;display:flex;flex-direction:column;gap:14px}
+.pillar h3{font-size:clamp(20px,1.7vw,26px);font-weight:800;letter-spacing:-.015em;line-height:1.15;color:#fff}
+.pillar p{font-size:14px;line-height:1.6;color:#b8b8c0}
+.pillar ul{list-style:none;display:flex;flex-direction:column;gap:9px;font-size:14px;color:#b8b8c0}
+.pillar li{padding-left:18px;position:relative;line-height:1.5}
+.pillar li::before{content:"";position:absolute;left:0;top:9px;width:8px;height:2px;background:var(--red)}
+.pillar .tag{font-family:var(--font-mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--red)}
+.pillar--red{background:var(--red)}
+.pillar--red .tag{color:rgba(255,255,255,.8)}
+.pillar--red p,.pillar--red li{color:#fdf3f5}
+
+/* ── CARDS ────────────────────────────────────────── */
+.grid{display:grid;gap:2px;background:var(--border-dark);border-radius:var(--radius);overflow:hidden}
+.section--light .grid{background:var(--border-light)}
+.grid--2{grid-template-columns:1fr}
+.grid--3{grid-template-columns:1fr}
+.grid--4{grid-template-columns:1fr}
+@media(min-width:600px){.grid--2{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:768px){.grid--3{grid-template-columns:repeat(3,1fr)};.grid--4{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.grid--4{grid-template-columns:repeat(4,1fr)}}
+.card{background:var(--black-soft);padding:28px 24px;display:flex;flex-direction:column;gap:10px;transition:background .2s}
+.section--light .card{background:var(--white-soft)}
+.card:hover{background:#222228}
+.section--light .card:hover{background:#eeeef2}
+.card h4{font-size:clamp(18px,1.6vw,24px);font-weight:800;letter-spacing:-.015em;line-height:1.2}
+.card p{font-size:14px;line-height:1.55;color:#b8b8c0}
+.section--light .card p{color:var(--grey-body)}
+.card .lbl{font-family:var(--font-mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--red)}
+.card--red{background:var(--red)!important}
+.card--red h4{color:#fff}
+.card--red p{color:#fdf3f5}
+.card--red .lbl{color:rgba(255,255,255,.75)}
+
+/* ── GAME SCREENSHOTS ────────────────────────────── */
+.game-shots{display:grid;grid-template-columns:1fr;gap:2px;background:var(--border-dark);border-radius:var(--radius);overflow:hidden;margin-bottom:44px}
+@media(min-width:640px){.game-shots{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.game-shots{grid-template-columns:repeat(3,1fr)}}
+.game-shot{position:relative;overflow:hidden;background:var(--black-soft)}
+.game-shot__img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;transition:transform .4s var(--ease)}
+.game-shot:hover .game-shot__img{transform:scale(1.04)}
+.game-shot__label{position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(0,0,0,.85));font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#fff}
+.game-shot__genre{color:var(--red);display:block;font-size:10px;letter-spacing:.2em;margin-top:2px}
+
+/* ── MARQUEE ─────────────────────────────────────── */
+.marquee-section{padding:32px 0;overflow:hidden;background:var(--black-soft);border-top:1px solid var(--border-dark);border-bottom:1px solid var(--border-dark)}
+.marquee-row{overflow:hidden;width:100%}
+.marquee-row+.marquee-row{margin-top:12px}
+.marquee-track{display:flex;gap:10px;width:max-content;will-change:transform}
+.marquee-track--fwd{animation:marquee-fwd 45s linear infinite}
+.marquee-track--rev{animation:marquee-rev 40s linear infinite}
+.marquee-section:hover .marquee-track{animation-play-state:paused}
+@keyframes marquee-fwd{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes marquee-rev{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+.game-icon-tile{flex-shrink:0;width:72px;height:72px;border-radius:14px;overflow:hidden;background:var(--black-line)}
+@media(min-width:768px){.game-icon-tile{width:88px;height:88px;border-radius:16px}}
+.game-icon-tile img{width:100%;height:100%;object-fit:cover;display:block}
+.game-icon-tile:hover{transform:scale(1.12) translateY(-3px);transition:transform .2s var(--ease)}
+
+/* ── FAQ ──────────────────────────────────────────── */
+.faq{max-width:960px;margin:0 auto;display:flex;flex-direction:column;gap:2px;background:var(--border-light);border-radius:var(--radius);overflow:hidden}
+.faq details{background:var(--white);padding:24px 30px}
+.faq details[open]{background:var(--white-soft)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:24px;font-weight:800;font-size:clamp(16px,1.3vw,20px);letter-spacing:-.01em;color:var(--black)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--font-mono);font-weight:400;color:var(--red);font-size:22px;flex-shrink:0}
+.faq details[open] summary::after{content:"−"}
+.faq p{margin-top:14px;font-size:15px;line-height:1.65;color:var(--grey-body);max-width:820px}
+
+/* ── TIMELINE ────────────────────────────────────── */
+.timeline{display:grid;gap:2px;background:var(--border-dark);border-radius:var(--radius);overflow:hidden}
+@media(min-width:640px){.timeline{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.timeline{grid-template-columns:repeat(4,1fr)}}
+.timeline .step{background:var(--black-soft);padding:26px 24px;display:flex;flex-direction:column;gap:8px}
+.timeline .year{font-size:clamp(26px,2.2vw,38px);font-weight:900;color:var(--red);letter-spacing:-.02em}
+.timeline .step h4{font-size:18px;font-weight:800;letter-spacing:-.01em;color:#fff}
+.timeline .step p{font-size:13px;line-height:1.5;color:#b0b0b8}
+.timeline .lbl{font-family:var(--font-mono);font-size:10px;letter-spacing:.18em;color:var(--grey-muted);text-transform:uppercase}
+
+/* ── CTA STRIP ───────────────────────────────────── */
+.cta{background:var(--black);color:#fff;padding:96px 0;position:relative;overflow:hidden}
+.cta__glow{position:absolute;left:-240px;bottom:-300px;width:1000px;height:1000px;border-radius:50%;background:radial-gradient(circle,rgba(196,30,58,.36) 0%,transparent 68%);pointer-events:none;animation:pulse-glow 9s ease-in-out infinite}
+.cta h2{font-size:clamp(34px,4.8vw,72px);font-weight:900;letter-spacing:-.03em;line-height:1.04;max-width:1200px;margin-bottom:24px;position:relative}
+.cta h2 em{font-style:normal;color:var(--red)}
+.cta p.body{max-width:860px;margin-bottom:36px;color:#b0b0b8;position:relative}
+.cta__row{display:flex;justify-content:space-between;gap:32px;align-items:flex-end;flex-wrap:wrap;position:relative}
+.cta__contact{font-family:var(--font-mono);font-size:13px;letter-spacing:.16em;color:#fff;line-height:1.9;text-transform:uppercase}
+.cta__contact span{color:var(--grey-faint)}
+.cta__contact a{color:#fff;border-bottom:1px solid rgba(255,255,255,.2);transition:border-color .15s}
+.cta__contact a:hover{border-color:#fff}
+.cta__office{font-family:var(--font-mono);font-size:11px;letter-spacing:.13em;color:var(--grey-faint);text-align:right;line-height:1.9;text-transform:uppercase}
+.cta__office a{color:var(--grey-faint);transition:color .15s}
+.cta__office a:hover{color:#fff}
+
+/* ── FOOTER ──────────────────────────────────────── */
+footer{background:#0d0d0d;border-top:1px solid var(--border-dark);padding:64px 0 36px;color:#c0c0c8}
+.footer__top{display:grid;grid-template-columns:1fr;gap:40px;padding-bottom:48px;border-bottom:1px solid var(--border-dark)}
+@media(min-width:640px){.footer__top{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:900px){.footer__top{grid-template-columns:1.4fr 1fr 1fr 1fr}}
+.footer__brand .footer-logo-img{height:28px;width:auto;margin-bottom:14px;opacity:.9}
+.footer__brand p{font-size:13px;line-height:1.65;color:var(--grey-muted);max-width:340px}
+footer h5{font-family:var(--font-mono);font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--red);margin-bottom:16px}
+footer ul{list-style:none;display:flex;flex-direction:column;gap:10px;font-size:13px}
+footer ul a{color:#b0b0b8;transition:color .15s}
+footer ul a:hover{color:#fff}
+.footer__bottom{display:flex;justify-content:space-between;gap:16px;padding-top:28px;flex-wrap:wrap;font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;color:var(--grey-faint);text-transform:uppercase}
+.footer__bottom a{color:var(--grey-faint);transition:color .15s}
+.footer__bottom a:hover{color:rgba(255,255,255,.6)}
+.footer__locs a{color:var(--grey-faint);transition:color .15s}
+.footer__locs a:hover{color:rgba(255,255,255,.6)}
+
+/* ── SKIP LINK ───────────────────────────────────── */
+.skip{position:absolute;left:-9999px;top:0;background:var(--red);color:#fff;padding:10px 16px;z-index:9999;font-size:14px}
+.skip:focus{left:12px;top:12px}
+
+/* ── MUDGAMES STATS STRIP ────────────────────────── */
+.mud-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--red);border-radius:var(--radius);overflow:hidden;margin-top:44px}
+@media(max-width:500px){.mud-stats{grid-template-columns:1fr}}
+.mud-stat{background:var(--red);padding:24px;text-align:center}
+.mud-stat .val{font-size:clamp(28px,2.8vw,44px);font-weight:900;color:#fff;letter-spacing:-.02em}
+.mud-stat .lbl{font-family:var(--font-mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.75);margin-top:6px}
+
+/* ── REVEAL ANIMATIONS ───────────────────────────── */
+@media(prefers-reduced-motion:no-preference){
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .72s var(--ease),transform .72s var(--ease)}
+  .reveal.is-in{opacity:1;transform:none}
+  .reveal-delay-1{transition-delay:.1s}
+  .reveal-delay-2{transition-delay:.2s}
+  .reveal-delay-3{transition-delay:.3s}
+  .reveal-delay-4{transition-delay:.4s}
+  .card,.division,.pillar,.step{transition:background .2s var(--ease),transform .2s var(--ease),box-shadow .2s var(--ease)}
+}
+</style>
+</head>
+<body>
+<div class="progress-bar" id="progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Page scroll progress"></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ═══ NAV ══════════════════════════════════════════ -->
+<header class="nav" id="site-nav">
+  <div class="wrap">
+    <div class="nav__inner">
+      <a href="https://veniso.com" class="nav-logo" aria-label="VENISO – Home">
+        <img src="assets/web/veniso_logo.png" alt="VENISO" class="logo-img" width="140" height="29" loading="eager">
+      </a>
+      <nav class="nav__links" aria-label="Primary navigation">
+        <a href="#business">Business</a>
+        <a href="#moitribe">MOITRIBE</a>
+        <a href="#mhealth">M-Health</a>
+        <a href="#mudgames">MUDGAMES</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn btn--red" style="padding:9px 18px;font-size:11px">Contact</a>
+      </nav>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-mobile" aria-label="Toggle menu">Menu</button>
+    </div>
+    <nav class="nav__mobile" id="nav-mobile" aria-label="Mobile navigation">
+      <a href="#business">Business</a>
+      <a href="#moitribe">MOITRIBE</a>
+      <a href="#mhealth">M-Health</a>
+      <a href="#mudgames">MUDGAMES</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ═══ HERO ═════════════════════════════════════════ -->
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="hero__glow2" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero__logo-wrap">
+      <img src="assets/web/veniso_logo.png" alt="VENISO" class="hero__logo-img" width="220" height="46" loading="eager">
+      <div class="hero__logo-divider" aria-hidden="true"></div>
+      <div class="hero__logo-meta">
+        VENISO Solutions Pvt Ltd<br>
+        <span>Since 2012 · ISO 27001 Certified</span>
+      </div>
+    </div>
+
+    <p class="hero__eyebrow">Managed SaaS · Gaming · M-Health</p>
+    <h1 id="hero-heading">Unlocking scale for <em>telecom</em> and <b>consumer</b> services.</h1>
+    <p class="hero__sub">One proprietary stack. Two faces. B2B Managed SaaS for operators, and consumer services that ride the same rails — MOITRIBE, M-Health and MUDGAMES.</p>
+    <p class="hero__desc">Every platform built in-house, deployed carrier-grade, and delivered as a managed service. Trusted by 150+ telecom operators across 50+ countries since 2012.</p>
+
+    <div class="hero__cta">
+      <a class="btn btn--red" href="#business">Explore Managed SaaS</a>
+      <a class="btn btn--ghost" href="#contact">Talk to us</a>
+    </div>
+
+    <div class="hero__stats-footer">
+      <div class="hero__stats-wrap">
+        <div class="hero__stat"><div class="val" data-count="15" data-suffix="Bn+">15Bn+</div><div class="lbl">DCB Transactions</div></div>
+        <div class="hero__stat"><div class="val" data-count="150" data-suffix="+">150+</div><div class="lbl">Telecom Deployments</div></div>
+        <div class="hero__stat"><div class="val" data-count="1" data-suffix="Bn+">1Bn+</div><div class="lbl">Unique Users</div></div>
+        <div class="hero__stat"><div class="val" data-count="200" data-suffix="+">200+</div><div class="lbl">Mobile Internet Partners</div></div>
+      </div>
+      <div class="hero__locations" aria-label="Office locations">Hyderabad · Dubai<br>New Delhi · Mumbai</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TRUST BAR ════════════════════════════════════ -->
+<section class="trustbar" aria-label="Key performance metrics">
+  <div class="wrap">
+    <div class="trustbar__grid">
+      <div><div class="val" data-count="40" data-suffix="Mn">40Mn</div><div class="lbl">Telco Txns / Day</div></div>
+      <div><div class="val" data-count="2.5" data-suffix="Mn">2.5Mn</div><div class="lbl">Multiplayer Rooms / Day</div></div>
+      <div><div class="val" data-count="500" data-suffix=" RPS">500 RPS</div><div class="lbl">Peak Billing</div></div>
+      <div><div class="val">99.99%</div><div class="lbl">Uptime SLA</div></div>
+      <div><div class="val" data-count="50" data-suffix="+">50+</div><div class="lbl">Countries Live</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ DIVISIONS ════════════════════════════════════ -->
+<section class="section section--light" id="divisions" aria-labelledby="div-heading">
+  <div class="wrap">
+    <div class="section__head">
+      <div class="eyebrow">Divisions</div>
+      <div class="right">One partner · Four platforms</div>
+    </div>
+    <h2 class="h-lead reveal" id="div-heading">A B2B engine, and three consumer services — all riding the same rails.</h2>
+    <p class="body reveal reveal-delay-1" style="max-width:900px;margin-bottom:44px">Operators and partners get our complete Managed SaaS. Subscribers get MOITRIBE, M-Health and MUDGAMES — served through telecom billing, delivered on the operator's brand, run by us as a managed service.</p>
+
+    <div class="divisions reveal reveal-delay-2">
+      <a class="division division--dark" href="#business">
+        <div class="num">01 · For Business</div>
+        <h3>Managed SaaS for Telecom VAS</h3>
+        <p>CMS + App config, package manager for offers, promos and plans, and a unified billing and subscription engine across telco and non-telco rails.</p>
+        <span class="tag">For Operators &amp; Partners</span>
+      </a>
+      <a class="division" href="#moitribe">
+        <div class="num">02 · Consumer · Gaming</div>
+        <h3>MOITRIBE</h3>
+        <p>Gaming on subscription — eat-all-you-can access to 100+ HTML5 titles, plus tournament-based competitive play with leaderboards, chat and rewards.</p>
+        <span class="tag">Telecom VAS Gaming</span>
+      </a>
+      <a class="division" href="#mhealth">
+        <div class="num">03 · Consumer · M-Health</div>
+        <h3>M-Health <span style="font-weight:400;color:var(--grey-muted)">(Top Doctors Online)</span></h3>
+        <p>A virtual hospital on the subscriber's phone — Educate, Consult and Diagnose. Managed end-to-end across the doctor value chain.</p>
+        <span class="tag">Telemedicine</span>
+      </a>
+      <a class="division" href="#mudgames">
+        <div class="num">04 · Consumer · Casual</div>
+        <h3>MUDGAMES</h3>
+        <p>Advertisement-powered hyper-casual gaming. 127 titles across 9 genres, playable instantly in any browser — no download, no subscription.</p>
+        <span class="tag">Ad-Supported Gaming</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ B2B ═══════════════════════════════════════════ -->
+<section class="section section--dark" id="business" aria-labelledby="b2b-heading">
+  <div class="wrap">
+    <div class="section__head">
+      <div class="eyebrow">01 · For Business</div>
+      <div class="right">Managed SaaS · In-House Proprietary</div>
+    </div>
+    <h2 class="h-lead reveal" id="b2b-heading">Managed SaaS for telecom VAS — <span style="color:var(--red)">carrier-grade</span>, cloud-hosted, zero CAPEX.</h2>
+    <p class="body reveal reveal-delay-1" style="max-width:960px;margin-bottom:44px">VENISO's B2B platform delivers everything a telecom operator or digital partner needs to launch, run and monetise content services. Three integrated pillars, all built in-house, all delivered as a managed service — live in weeks, not quarters.</p>
+
+    <div class="pillars reveal reveal-delay-2">
+      <article class="pillar">
+        <div class="tag">Pillar 01</div>
+        <h3>CMS &amp; App Configuration</h3>
+        <p>A complete content management system for hosting, publishing and distributing games, video, audio, apps and documents — with white-label app configuration for operators and partners.</p>
+        <ul>
+          <li>Bulk upload, metadata, subtitles, cloud transcoding</li>
+          <li>Multi-surface delivery — web, WAP, app, PWA, HTML5, STB</li>
+          <li>Whitelabel app skins, branding, store distribution</li>
+        </ul>
+      </article>
+      <article class="pillar">
+        <div class="tag">Pillar 02</div>
+        <h3>Package Manager</h3>
+        <p>A single console to define and run every commercial construct — from daily data-pack bundles to seasonal promos, subscriber segments, and priority offers across markets.</p>
+        <ul>
+          <li>Offers, promos, plans and bundles</li>
+          <li>Segment, cohort and price-point control</li>
+          <li>Campaign orchestration &amp; A/B testing</li>
+          <li>Per-market, per-subscriber, per-title rules</li>
+        </ul>
+      </article>
+      <article class="pillar pillar--red">
+        <div class="tag">Pillar 03</div>
+        <h3>Billing &amp; Subscription Engine</h3>
+        <p>One unified engine routing every transaction across telco rails (DCB, USSD, SMS, zero-rated portals) and non-telco rails (cards, wallets, UPI, bank transfer, PayPal).</p>
+        <ul>
+          <li>Direct carrier billing · 15 Bn+ txns processed</li>
+          <li>Cards, wallets, UPI, bank, PayPal</li>
+          <li>Multi-route paywall, dynamic plans, retries, grace periods</li>
+          <li>Subscription state synced across app, web, TV, partner stores</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="grid grid--3 reveal reveal-delay-2" style="margin-top:2px">
+      <div class="card">
+        <div class="lbl">Zero CAPEX</div>
+        <h4>Cloud-hosted, operator-grade</h4>
+        <p>No hardware to buy, no data centre to build. Deployed inside your network or as a fully managed service.</p>
+      </div>
+      <div class="card">
+        <div class="lbl">Proprietary by design</div>
+        <h4>Zero third-party dependency</h4>
+        <p>Billing, ML recommendations, publishing, notifications — all in-house, shaped to each operator's market.</p>
+      </div>
+      <div class="card">
+        <div class="lbl">Scale as a habit</div>
+        <h4>Built for telco volumes</h4>
+        <p>40 million telco transactions a day, peak billing at 500 RPS, 99.99% uptime across 50+ countries.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MOITRIBE ══════════════════════════════════════ -->
+<section class="section section--light" id="moitribe" aria-labelledby="moi-heading">
+  <div class="wrap">
+    <div class="section__head">
+      <div class="eyebrow">02 · Consumer · Gaming Subscription</div>
+      <div class="right">MOITRIBE · Telecom VAS Gaming</div>
+    </div>
+    <h2 class="h-lead reveal" id="moi-heading">MOITRIBE — play more, win more, on a subscription the operator already knows how to bill.</h2>
+    <p class="body reveal reveal-delay-1" style="max-width:960px;margin-bottom:44px">MOITRIBE is VENISO's gaming service for telecom subscribers. Two commercial models — an eat-all-you-can subscription to 100+ HTML5 titles, and a tournament layer that turns play into a skill-based competition. Codeless to include in any telco, media brand or device partner.</p>
+
+    <div class="grid grid--2 reveal reveal-delay-2">
+      <div class="card">
+        <div class="lbl">Model 01 · Eat-All-You-Can</div>
+        <h4>Subscription to the full catalogue</h4>
+        <p>One weekly or monthly charge through the operator's existing DCB or prepaid rail unlocks every title. No per-game purchases, no in-app friction, no app store sitting between you and the subscriber.</p>
+      </div>
+      <div class="card">
+        <div class="lbl">Model 02 · Tournament</div>
+        <h4>Skill-based competitive play</h4>
+        <p>Hourly, daily, weekly and monthly tournaments on a codeless multiplayer engine — leaderboards, clubs, teams, chat, achievements and a unified rewards economy. Play more, win more. No luck, no gambling.</p>
+      </div>
+    </div>
+
+    <div class="grid grid--4 reveal reveal-delay-3" style="margin-top:2px">
+      <div class="card">
+        <div class="lbl">Catalogue</div>
+        <h4>100+ HTML5 games</h4>
+        <p>Casual, board, cards, sports, racing, action, arcade, puzzle, adventure — licensed titles and in-house builds.</p>
+      </div>
+      <div class="card">
+        <div class="lbl">Inclusion</div>
+        <h4>Codeless multiplayer</h4>
+        <p>Any existing game, app or super-app adopts the multiplayer engine without touching a line of networking code.</p>
+      </div>
+      <div class="card">
+        <div class="lbl">Monetise</div>
+        <h4>Subscription, ads or RMG</h4>
+        <p>DCB subscriptions, ADMOFI in-game advertising, or regulated real-money gaming — chosen per market.</p>
+      </div>
+      <div class="card card--red">
+        <div class="lbl">Scale today</div>
+        <h4>2.5 Mn rooms / day</h4>
+        <p>Cross-platform on Android, iOS, web and inside operator super-apps. One account, one wallet, one leaderboard.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ M-HEALTH ══════════════════════════════════════ -->
+<section class="section section--dark" id="mhealth" aria-labelledby="mh-heading">
+  <div class="wrap">
+    <div class="section__head">
+      <div class="eyebrow">03 · Consumer · M-Health</div>
+      <div class="right">Top Doctors Online · Virtual Hospital</div>
+    </div>
+    <h2 class="h-lead reveal" id="mh-heading">A virtual hospital in every pocket — carried on the operator's own billing.</h2>
+    <p class="body reveal reveal-delay-1" style="max-width:960px;margin-bottom:44px">VENISO's M-Health service brings medical advice directly to telecom subscribers and manages the complete end-to-end connect to the doctor value chain — in markets where the service is run by the telco with permission. Three pillars. One subscriber journey. Any phone, any network.</p>
+
+    <div class="grid grid--3 reveal reveal-delay-2">
+      <article class="card">
+        <div class="lbl">01 · Educate</div>
+        <h4>Healthopedia</h4>
+        <p>Articles, slideshows, videos, FAQs and case studies — written by practising doctors in local languages. No copy-paste from the internet.</p>
+      </article>
+      <article class="card">
+        <div class="lbl">02 · Consult</div>
+        <h4>10+ specialities, 24×7</h4>
+        <p>Chat, voice, video and live group sessions. Numbers masked both ways. Non-data subscribers reach doctors by hotline, USSD or SMS keyword.</p>
+      </article>
+      <article class="card">
+        <div class="lbl">03 · Diagnose</div>
+        <h4>Lab tests at home</h4>
+        <p>Book a checkup package, partner phlebotomist collects at the doorstep, digital reports land in the app and by SMS, and a doctor explains results in a free follow-up.</p>
+      </article>
+    </div>
+
+    <div class="grid grid--4 reveal reveal-delay-2" style="margin-top:2px">
+      <div class="card"><div class="lbl">Access · 01</div><h4>Web / WAP</h4><p>Any internet-enabled phone, tablet or desktop.</p></div>
+      <div class="card"><div class="lbl">Access · 02</div><h4>Mobile App</h4><p>First-of-its-kind app with reminders and notifications.</p></div>
+      <div class="card"><div class="lbl">Access · 03</div><h4>Voice / IVR</h4><p>Reach non-data users via the simplest channel — a call.</p></div>
+      <div class="card"><div class="lbl">Access · 04</div><h4>USSD &amp; SMS</h4><p>Short codes to browse categories and book without internet.</p></div>
+    </div>
+
+    <div class="grid grid--4 reveal reveal-delay-3" style="margin-top:2px">
+      <div class="card card--red"><div class="lbl">Paid txns</div><h4>9.5 Mn+</h4></div>
+      <div class="card card--red"><div class="lbl">Consultations</div><h4>45,000+</h4></div>
+      <div class="card card--red"><div class="lbl">Lab packages</div><h4>42,000+</h4></div>
+      <div class="card card--red"><div class="lbl">Telemed team 24×7</div><h4>85+</h4></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MUDGAMES ══════════════════════════════════════ -->
+<section class="section section--light" id="mudgames" aria-labelledby="mud-heading">
+  <div class="wrap">
+    <div class="section__head">
+      <div class="eyebrow">04 · Consumer · Casual Gaming</div>
+      <div class="right">MUDGAMES · Ad-Powered · 127 Titles</div>
+    </div>
+    <h2 class="h-lead reveal" id="mud-heading">MUDGAMES — hyper-casual gaming, powered by advertising. No download. No subscription.</h2>
+    <p class="body reveal reveal-delay-1" style="max-width:960px;margin-bottom:44px">A browser-native catalogue of 127 titles across 9 genres. Playable instantly on any device, any network, with no install and no store. Monetised entirely through in-game advertising — so the play is free and the funnel is bottomless.</p>
+  </div>
+
+  <!-- Featured Game Screenshots -->
+  <div class="wrap">
+    <div class="game-shots reveal reveal-delay-2">
+      <div class="game-shot">
+        <img src="assets/web/farm_defense_1.webp" alt="Farm Defense – tower defense game screenshot" class="game-shot__img" loading="lazy" width="480" height="270">
+        <div class="game-shot__label">Farm Defense<span class="game-shot__genre">Defence · Shooting</span></div>
+      </div>
+      <div class="game-shot">
+        <img src="assets/web/far_furious_snake_1.webp" alt="Far and Furious Road – racing game screenshot" class="game-shot__img" loading="lazy" width="480" height="270">
+        <div class="game-shot__label">Far &amp; Furious Road<span class="game-shot__genre">Racing · Hyper Casual</span></div>
+      </div>
+      <div class="game-shot">
+        <img src="assets/web/puzzle_action_1.webp" alt="2048 puzzle game screenshot" class="game-shot__img" loading="lazy" width="480" height="270">
+        <div class="game-shot__label">2048<span class="game-shot__genre">Puzzle · Casual</span></div>
+      </div>
+      <div class="game-shot">
+        <img src="assets/web/defense_shooter_1.webp" alt="Indian Outpost Defense – tower defense screenshot" class="game-shot__img" loading="lazy" width="480" height="270">
+        <div class="game-shot__label">Indian Outpost Defense<span class="game-shot__genre">Tower Defense · Strategy</span></div>
+      </div>
+      <div class="game-shot">
+        <img src="assets/web/bingo_poker_1.webp" alt="Bingo Online – multiplayer bingo screenshot" class="game-shot__img" loading="lazy" width="480" height="270">
+        <div class="game-shot__label">Bingo Online<span class="game-shot__genre">Bingo · Multiplayer</span></div>
+      </div>
+      <div class="game-shot">
+        <img src="assets/web/racing_sports_1.webp" alt="2 Cars Racing – hyper casual racing screenshot" class="game-shot__img" loading="lazy" width="480" height="270">
+        <div class="game-shot__label">2 Cars Racing<span class="game-shot__genre">Racing · Hyper Casual</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Game Icon Marquee — full bleed -->
+<div class="marquee-section" aria-label="MUDGAMES game catalogue preview" role="region">
+  <div class="marquee-row">
+    <div class="marquee-track marquee-track--fwd" aria-hidden="true">
+      <!-- Row 1 × 2 for seamless loop -->
+      <div class="game-icon-tile"><img src="assets/icons/icon_00.webp" alt="Ludo War" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_01.webp" alt="Farm Defense" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_02.webp" alt="Formula Race" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_03.webp" alt="Classic Bowling" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_04.webp" alt="Formula Speed" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_05.webp" alt="Chhota Ludo" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_06.webp" alt="Far &amp; Furious" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_07.webp" alt="Snake 3D" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_08.webp" alt="Secret Agent" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_09.webp" alt="Level Trap" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_10.webp" alt="V Life" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_11.webp" alt="Ragdoll Rampage" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_12.webp" alt="Wild Cards" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_13.webp" alt="HitCricket" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_14.webp" alt="Angry Heroes" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_15.webp" alt="Super Mareo" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_16.webp" alt="Rocket Dash" loading="lazy" width="88" height="88"></div>
+      <!-- duplicate for loop -->
+      <div class="game-icon-tile"><img src="assets/icons/icon_00.webp" alt="Ludo War" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_01.webp" alt="Farm Defense" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_02.webp" alt="Formula Race" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_03.webp" alt="Classic Bowling" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_04.webp" alt="Formula Speed" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_05.webp" alt="Chhota Ludo" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_06.webp" alt="Far &amp; Furious" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_07.webp" alt="Snake 3D" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_08.webp" alt="Secret Agent" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_09.webp" alt="Level Trap" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_10.webp" alt="V Life" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_11.webp" alt="Ragdoll Rampage" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_12.webp" alt="Wild Cards" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_13.webp" alt="HitCricket" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_14.webp" alt="Angry Heroes" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_15.webp" alt="Super Mareo" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_16.webp" alt="Rocket Dash" loading="lazy" width="88" height="88"></div>
+    </div>
+  </div>
+  <div class="marquee-row">
+    <div class="marquee-track marquee-track--rev" aria-hidden="true">
+      <!-- Row 2 (icons 17–32) × 2 -->
+      <div class="game-icon-tile"><img src="assets/icons/icon_17.webp" alt="Sling Tomb" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_18.webp" alt="Jetsuit Jumper" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_19.webp" alt="Cut The Candy" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_20.webp" alt="Egg Catcher" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_21.webp" alt="Cricket Online" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_22.webp" alt="Bingo Online" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_23.webp" alt="Poker Online" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_24.webp" alt="Head 2 Head Soccer" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_25.webp" alt="Tambola" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_26.webp" alt="Math Race" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_27.webp" alt="Gin Rummy" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_28.webp" alt="Tic Tac Toe" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_29.webp" alt="8 Ball Game" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_30.webp" alt="BaghChal" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_31.webp" alt="2048" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_32.webp" alt="Shark Rampage" loading="lazy" width="88" height="88"></div>
+      <!-- duplicate -->
+      <div class="game-icon-tile"><img src="assets/icons/icon_17.webp" alt="Sling Tomb" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_18.webp" alt="Jetsuit Jumper" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_19.webp" alt="Cut The Candy" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_20.webp" alt="Egg Catcher" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_21.webp" alt="Cricket Online" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_22.webp" alt="Bingo Online" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_23.webp" alt="Poker Online" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_24.webp" alt="Head 2 Head Soccer" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_25.webp" alt="Tambola" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_26.webp" alt="Math Race" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_27.webp" alt="Gin Rummy" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_28.webp" alt="Tic Tac Toe" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_29.webp" alt="8 Ball Game" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_30.webp" alt="BaghChal" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_31.webp" alt="2048" loading="lazy" width="88" height="88"></div>
+      <div class="game-icon-tile"><img src="assets/icons/icon_32.webp" alt="Shark Rampage" loading="lazy" width="88" height="88"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Genre Grid + Stats back inside section -->
+<section class="section section--light" aria-label="MUDGAMES genres and stats" style="padding-top:44px">
+  <div class="wrap">
+    <div class="grid grid--3 reveal">
+      <div class="card"><div class="lbl">Genres · 01</div><h4>Board &amp; Classic</h4><p>Ludo, Snakes &amp; Ladders, Tambola, BaghChal, Sudoku — timeless tabletop, phone-first.</p></div>
+      <div class="card"><div class="lbl">Genres · 02</div><h4>Cards &amp; Casino</h4><p>Poker, Bingo, Gin Rummy, Solitaire, 8-Ball Pool, Wild Cards — always open, always multiplayer-ready.</p></div>
+      <div class="card"><div class="lbl">Genres · 03</div><h4>Racing &amp; Driving</h4><p>Traffic Car Rush, Kart Racer, Formula Speed, Moto Madness — pedal to the floor.</p></div>
+      <div class="card"><div class="lbl">Genres · 04</div><h4>Sports &amp; Arena</h4><p>Cricket, football, basketball, bowling, wrestling, air hockey — the arena travels with you.</p></div>
+      <div class="card"><div class="lbl">Genres · 05</div><h4>Action &amp; Shooter</h4><p>Stickman, Duck Shooter, Space Purge, Ninja Action — fast triggers, sharp aim.</p></div>
+      <div class="card"><div class="lbl">Genres · 06</div><h4>Arcade &amp; Casual</h4><p>Fruit Slicer, Flappy Bat, Brick Out, Snake 3D — pick-up-and-play, five minutes or five hours.</p></div>
+      <div class="card"><div class="lbl">Genres · 07</div><h4>Puzzle &amp; Trivia</h4><p>Quiz Battle, Math Race, Detective Millie, Nuts &amp; Bolts — brain-first games.</p></div>
+      <div class="card"><div class="lbl">Genres · 08</div><h4>Defense &amp; Battle</h4><p>Kingdom Defense, Ranger vs Zombies, Shark Rampage — hold the line.</p></div>
+      <div class="card card--red"><div class="lbl">Genres · 09</div><h4>Adventure &amp; Simulation</h4><p>Kite Simulator, V Life, Super Mareo, Plumber, Farming Simulator — offbeat worlds, slower burns.</p></div>
+    </div>
+
+    <div class="mud-stats reveal reveal-delay-2">
+      <div class="mud-stat"><div class="val" data-count="127" data-suffix="">127</div><div class="lbl">Total Titles</div></div>
+      <div class="mud-stat"><div class="val">9</div><div class="lbl">Genres</div></div>
+      <div class="mud-stat"><div class="val">0</div><div class="lbl">Downloads Required</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ABOUT / TIMELINE ══════════════════════════════ -->
+<section class="section section--dark" id="about" aria-labelledby="about-heading">
+  <div class="wrap">
+    <div class="section__head">
+      <div class="eyebrow">05 · About VENISO</div>
+      <div class="right">Since 2012 · ISO 27001 Certified</div>
+    </div>
+    <h2 class="h-lead reveal" id="about-heading">Technology-first, in-house, since 2012. A first-of-its-kind product roughly every year.</h2>
+    <p class="body reveal reveal-delay-1" style="max-width:960px;margin-bottom:44px">The core team built SS7 components for telecom operators before building products. That engineering DNA is why our platforms behave like network elements rather than web apps — predictable, self-healing, and able to hold their SLA at telco volumes.</p>
+
+    <div class="timeline reveal reveal-delay-2">
+      <div class="step">
+        <div class="year">2012</div>
+        <div class="lbl">MTRUSS</div>
+        <h4>Android IAP wrapper</h4>
+        <p>The first robust Android in-app purchase and subscription wrapper — billing added to any app without touching code.</p>
+      </div>
+      <div class="step">
+        <div class="year">2013</div>
+        <div class="lbl">ADMOFI</div>
+        <h4>In-game ad mediation</h4>
+        <p>Programmatic mediation across 25+ networks with priority optimisation algorithms.</p>
+      </div>
+      <div class="step">
+        <div class="year">2014</div>
+        <div class="lbl">APTIFUN</div>
+        <h4>Universal content engine</h4>
+        <p>Content distribution for games, video, audio, apps and documents across web, WAP, app and PWA.</p>
+      </div>
+      <div class="step">
+        <div class="year">2015</div>
+        <div class="lbl">MOITRIBE</div>
+        <h4>Social multiplayer engine</h4>
+        <p>Cross-platform social multiplayer — tournaments, leaderboards, chat and a rewards economy. Codeless to include.</p>
+      </div>
+    </div>
+
+    <div class="grid grid--4 reveal reveal-delay-3" style="margin-top:2px">
+      <div class="card">
+        <div class="lbl">Proprietary by design</div>
+        <h4>Zero third-party dependency</h4>
+        <p>Built in-house end to end on a security-first PHP framework of our own.</p>
+      </div>
+      <div class="card">
+        <div class="lbl">One integration</div>
+        <h4>Nine product lines, one partner</h4>
+        <p>Payments, OTT, gaming, ads, analytics, CRBT, zero-rating, ISP AAA and M-Health.</p>
+      </div>
+      <div class="card">
+        <div class="lbl">Operator footprint</div>
+        <h4>Vodafone · Airtel · Jio · Zain · du</h4>
+        <p>Deployed across APAC, Middle East, South East Asia and Africa.</p>
+      </div>
+      <div class="card card--red">
+        <div class="lbl">Locations</div>
+        <h4>Hyderabad · Dubai · Delhi · Mumbai</h4>
+        <p>HQ at iLabs, Madhapur, Hyderabad. Regional offices across India and the Gulf.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FAQ ════════════════════════════════════════════ -->
+<section class="section section--light" id="faq" aria-labelledby="faq-heading">
+  <div class="wrap">
+    <div class="section__head">
+      <div class="eyebrow">06 · Frequently Asked</div>
+      <div class="right">For partners, buyers and search engines</div>
+    </div>
+    <h2 class="h-lead reveal" id="faq-heading" style="text-align:center;margin-left:auto;margin-right:auto">Answers, in plain language.</h2>
+    <p class="body reveal reveal-delay-1" style="text-align:center;margin:0 auto 44px;max-width:720px">Short, factual answers about VENISO's B2B Managed SaaS platform and the three consumer services — MOITRIBE, M-Health and MUDGAMES.</p>
+
+    <div class="faq reveal reveal-delay-2">
+      <details open>
+        <summary>What does VENISO do?</summary>
+        <p>VENISO is a technology-driven products company founded in 2012 that builds proprietary platforms powering telecom operators and consumer services — a Managed SaaS for CMS, package management and billing, plus three consumer products: MOITRIBE (gaming subscriptions), M-Health / Top Doctors Online (virtual hospital) and MUDGAMES (ad-powered hyper-casual gaming).</p>
+      </details>
+      <details>
+        <summary>What is VENISO's B2B Managed SaaS?</summary>
+        <p>It gives telecom operators and digital partners three integrated capabilities: (1) CMS and app configuration for hosting and distributing content, (2) a package manager for offers, promotions and subscription plans, and (3) a unified billing and subscription engine covering direct carrier billing and non-telco rails like cards, wallets and UPI. Delivered as a managed service, cloud-hosted, with zero CAPEX.</p>
+      </details>
+      <details>
+        <summary>What is MOITRIBE?</summary>
+        <p>MOITRIBE is VENISO's telecom VAS gaming subscription service offering two commercial models — an eat-all-you-can subscription to 100+ HTML5 games, and a tournament-based competitive layer with leaderboards, chat and a rewards economy. It runs on a codeless multiplayer engine that any operator, media brand or device partner can adopt.</p>
+      </details>
+      <details>
+        <summary>What is MUDGAMES?</summary>
+        <p>MUDGAMES is VENISO's advertisement-powered hyper-casual gaming platform. It hosts 127 titles across 9 genres, playable instantly in any browser with no download, and monetises through in-game advertising powered by VENISO's proprietary ADMOFI mediation platform.</p>
+      </details>
+      <details>
+        <summary>What is VENISO's M-Health service?</summary>
+        <p>VENISO's M-Health service (Top Doctors Online) is a virtual hospital delivered to telecom subscribers. Three pillars — Educate (Healthopedia medical content in local languages), Consult (10+ specialities, 24×7 on chat, voice, video and live sessions), and Diagnose (home lab collection with digital reports and a free doctor follow-up). Managed end-to-end in markets where the telco runs the service with permission.</p>
+      </details>
+      <details>
+        <summary>Which telecom operators does VENISO work with?</summary>
+        <p>VENISO has deployed across 150+ telecom operators in 50+ countries, including Vodafone, Airtel, Idea, Jio, Zain, du, Etisalat, Ooredoo, MPT, Ncell, NT, Orange and WE, among others.</p>
+      </details>
+      <details>
+        <summary>How many DCB transactions has VENISO processed?</summary>
+        <p>Over 15 billion direct carrier billing (DCB) transactions, serving 1 billion+ unique users, processing 40 million telco transactions per day at a peak billing rate of 500 RPS.</p>
+      </details>
+      <details>
+        <summary>How does VENISO handle billing and subscriptions?</summary>
+        <p>Through an in-house proprietary unified billing engine routing every transaction across telco rails (DCB, USSD, SMS, zero-rated portals) and non-telco rails (cards, wallets, UPI, bank transfer, PayPal). It supports multi-route paywalls, dynamic plans, retries, grace periods and subscription state synced across app, web, TV and partner stores.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA / CONTACT ════════════════════════════════ -->
+<section class="cta" id="contact" aria-labelledby="contact-heading">
+  <div class="cta__glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="section__head" style="border-color:rgba(255,255,255,.2)">
+      <div class="eyebrow">07 · Contact</div>
+      <div class="right" style="color:var(--grey-muted)">Managed SaaS · MOITRIBE · M-Health · MUDGAMES</div>
+    </div>
+    <h2 id="contact-heading">Pick a platform. We will launch it on <em>your brand</em>.</h2>
+    <p class="body">Managed SaaS for telecom VAS, MOITRIBE gaming subscriptions, M-Health and MUDGAMES — whitelabel, operator-grade, live in weeks rather than quarters.</p>
+    <div class="cta__row">
+      <div class="cta__contact">
+        <a href="mailto:business@veniso.com">business@veniso.com</a><br>
+        <span><a href="https://veniso.com" rel="noopener">VENISO.COM</a></span>
+      </div>
+      <div>
+        <a class="btn btn--red" href="mailto:business@veniso.com">Talk to us →</a>
+      </div>
+      <div class="cta__office">
+        <a href="https://veniso.com" rel="noopener">VENISO Solutions Pvt Ltd</a><br>
+        <a href="https://maps.google.com/?q=Eternal+Samyuktha+Vittal+Rao+Nagar+Madhapur+Hyderabad" rel="noopener noreferrer" target="_blank">2nd Floor, 1-98/5/2/1, Block-B, Eternal Samyuktha</a><br>
+        <a href="https://maps.google.com/?q=Vittal+Rao+Nagar+Madhapur+Hyderabad+500081" rel="noopener noreferrer" target="_blank">Vittal Rao Nagar, Madhapur, Hyderabad 500081 · India</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══ FOOTER ════════════════════════════════════════ -->
+<footer role="contentinfo">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="https://veniso.com" aria-label="VENISO – Home">
+          <img src="assets/web/veniso_logo.png" alt="VENISO" class="footer-logo-img" width="120" height="25" loading="lazy">
+        </a>
+        <p>Proprietary platforms for telecom operators and consumer services. Built in-house since 2012. Delivered as a managed service, worldwide.</p>
+      </div>
+      <div>
+        <h5>Business</h5>
+        <ul>
+          <li><a href="#business">Managed SaaS Overview</a></li>
+          <li><a href="#business">CMS &amp; App Configuration</a></li>
+          <li><a href="#business">Package Manager</a></li>
+          <li><a href="#business">Billing &amp; Subscription Engine</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Consumer</h5>
+        <ul>
+          <li><a href="#moitribe">MOITRIBE — Gaming Subscriptions</a></li>
+          <li><a href="#mhealth">M-Health — Top Doctors Online</a></li>
+          <li><a href="#mudgames">MUDGAMES — Casual Gaming</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#about">About VENISO</a></li>
+          <li><a href="#faq">Frequently Asked Questions</a></li>
+          <li><a href="mailto:business@veniso.com">business@veniso.com</a></li>
+          <li><a href="https://www.linkedin.com/company/veniso" rel="noopener noreferrer" target="_blank">LinkedIn</a></li>
+          <li><a href="https://veniso.com/privacy" rel="noopener">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div>© <span id="year">2026</span> <a href="https://veniso.com" rel="noopener">VENISO Solutions Pvt Ltd</a> · <a href="https://www.mca.gov.in" rel="noopener noreferrer" target="_blank" title="Ministry of Corporate Affairs India">CIN U72200TG2012PTC082758</a></div>
+      <div class="footer__locs">
+        <a href="https://maps.google.com/?q=iLabs+Madhapur+Hyderabad" rel="noopener noreferrer" target="_blank">Hyderabad</a> ·
+        <a href="https://maps.google.com/?q=New+Delhi+India" rel="noopener noreferrer" target="_blank">New Delhi</a> ·
+        <a href="https://maps.google.com/?q=Mumbai+India" rel="noopener noreferrer" target="_blank">Mumbai</a> ·
+        <a href="https://maps.google.com/?q=Dubai+UAE" rel="noopener noreferrer" target="_blank">Dubai</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+'use strict';
+
+/* ── Mobile nav ──────────────────────────────────── */
+var toggle = document.querySelector('.nav__toggle');
+var mobile = document.getElementById('nav-mobile');
+if (toggle && mobile) {
+  toggle.addEventListener('click', function(){
+    var open = mobile.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.textContent = open ? 'Close' : 'Menu';
+  });
+  mobile.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      mobile.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.textContent = 'Menu';
+    });
+  });
+}
+
+/* ── Nav scrolled state ──────────────────────────── */
+var nav = document.getElementById('site-nav');
+function onScroll(){
+  if(nav) nav.classList.toggle('scrolled', window.scrollY > 40);
+  // progress bar
+  var prog = document.getElementById('progress');
+  if(prog){
+    var scrolled = window.scrollY;
+    var total = document.documentElement.scrollHeight - window.innerHeight;
+    var pct = total > 0 ? (scrolled / total * 100) : 0;
+    prog.style.width = pct + '%';
+    prog.setAttribute('aria-valuenow', Math.round(pct));
+  }
+}
+window.addEventListener('scroll', onScroll, {passive:true});
+onScroll();
+
+/* ── Reveal on scroll ────────────────────────────── */
+if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if (en.isIntersecting) {
+        en.target.classList.add('is-in');
+        io.unobserve(en.target);
+      }
+    });
+  }, {threshold: 0.1, rootMargin: '0px 0px -36px 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+} else {
+  document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('is-in'); });
+}
+
+/* ── Counter animation ───────────────────────────── */
+function animateCount(el){
+  var raw = el.getAttribute('data-count');
+  if(!raw) return;
+  var target = parseFloat(raw);
+  var suffix = el.getAttribute('data-suffix') || '';
+  var isDecimal = raw.indexOf('.') !== -1;
+  var duration = 1800;
+  var startTime = null;
+  function step(ts){
+    if(!startTime) startTime = ts;
+    var progress = Math.min((ts - startTime) / duration, 1);
+    var eased = 1 - Math.pow(1 - progress, 3); // ease-out-cubic
+    var val = target * eased;
+    el.textContent = (isDecimal ? val.toFixed(1) : Math.floor(val)) + suffix;
+    if(progress < 1) requestAnimationFrame(step);
+    else el.textContent = (isDecimal ? target.toFixed(1) : target) + suffix;
+  }
+  requestAnimationFrame(step);
+}
+
+var countEls = document.querySelectorAll('[data-count]');
+if ('IntersectionObserver' in window) {
+  var counterIO = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        animateCount(en.target);
+        counterIO.unobserve(en.target);
+      }
+    });
+  }, {threshold: 0.5});
+  countEls.forEach(function(el){ counterIO.observe(el); });
+} else {
+  countEls.forEach(animateCount);
+}
+
+/* ── Footer year ─────────────────────────────────── */
+var yr = document.getElementById('year');
+if(yr) yr.textContent = new Date().getFullYear();
+
+})();
+</script>
+</body>
+</html>
