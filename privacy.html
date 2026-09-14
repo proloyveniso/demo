@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111111">
+<title>Privacy Policy — VENISO Solutions Private Limited</title>
+<meta name="description" content="VENISO Solutions Private Limited privacy notice. Learn how we collect, use and protect your personal information across our Managed SaaS, MOITRIBE, M-Health and MUDGAMES platforms.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://veniso.com/privacy.html">
+<meta property="og:title" content="Privacy Policy — VENISO">
+<meta property="og:description" content="How VENISO collects, uses and protects your personal information.">
+<meta property="og:url" content="https://veniso.com/privacy.html">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;400;500;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--black:#111111;--black-soft:#1a1a1a;--white:#ffffff;--white-soft:#f6f6f8;--red:#c41e3a;--red-dark:#a8172f;--grey-body:#43434a;--grey-muted:#8f8f96;--grey-faint:#6a6a72;--border-light:#e4e4e9;--border-dark:rgba(255,255,255,.12);--font-sans:'Archivo',-apple-system,BlinkMacSystemFont,sans-serif;--font-mono:'IBM Plex Mono',ui-monospace,monospace;--ease:cubic-bezier(.22,.68,.3,1)}
+html{scroll-behavior:smooth}
+body{background:var(--white);color:var(--black);font-family:var(--font-sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--red);text-decoration:none;transition:color .15s}
+a:hover{color:var(--red-dark)}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+::selection{background:var(--red);color:#fff}
+.wrap{max-width:1440px;margin:0 auto;padding:0 24px}
+@media(min-width:768px){.wrap{padding:0 48px}}
+@media(min-width:1024px){.wrap{padding:0 64px}}
+/* NAV */
+.nav{position:sticky;top:0;z-index:200;background:rgba(17,17,17,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--border-dark)}
+.nav__inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:20px}
+.nav-logo img{height:30px;width:auto;display:block}
+.nav__links{display:none;gap:32px;align-items:center;font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+.nav__links a{color:#c0c0c8;transition:color .15s}
+.nav__links a:hover{color:#fff}
+.nav__toggle{font-family:var(--font-mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#fff;padding:8px 14px;border:1px solid var(--border-dark);border-radius:100px}
+@media(min-width:1024px){.nav__links{display:flex}.nav__toggle{display:none}}
+.nav__mobile{display:none;flex-direction:column;padding:8px 0 16px;border-top:1px solid var(--border-dark)}
+.nav__mobile.is-open{display:flex}
+.nav__mobile a{font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#c0c0c8;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+/* PAGE HERO */
+.page-hero{background:var(--black);color:#fff;padding:56px 0 48px;border-bottom:1px solid var(--border-dark)}
+.breadcrumb{font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--grey-muted);margin-bottom:20px}
+.breadcrumb a{color:var(--grey-muted);transition:color .15s}
+.breadcrumb a:hover{color:#fff}
+.breadcrumb span{color:var(--red);margin:0 8px}
+.page-hero h1{font-size:clamp(32px,4vw,58px);font-weight:900;letter-spacing:-.03em;line-height:1.04;margin-bottom:16px}
+.page-hero .meta{font-family:var(--font-mono);font-size:12px;letter-spacing:.18em;color:var(--grey-muted);text-transform:uppercase}
+/* CONTENT */
+.content-wrap{max-width:860px;margin:0 auto;padding:64px 24px 96px}
+@media(min-width:768px){.content-wrap{padding:72px 48px 108px}}
+.toc{background:var(--white-soft);border:1px solid var(--border-light);border-radius:14px;padding:28px 32px;margin-bottom:52px}
+.toc h2{font-size:14px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--grey-muted);font-family:var(--font-mono);margin-bottom:16px}
+.toc ol{list-style:none;counter-reset:toc;display:flex;flex-direction:column;gap:8px}
+.toc li{counter-increment:toc;font-size:15px}
+.toc li::before{content:counter(toc,decimal-leading-zero)". ";font-family:var(--font-mono);font-size:12px;color:var(--red);margin-right:8px}
+.toc a{color:var(--grey-body);transition:color .15s}
+.toc a:hover{color:var(--red)}
+.policy-section{margin-bottom:52px}
+.policy-section h2{font-size:clamp(18px,2vw,24px);font-weight:900;letter-spacing:-.02em;color:var(--black);margin-bottom:16px;padding-top:8px;border-top:2px solid var(--red);padding-top:16px}
+.policy-section p{font-size:16px;line-height:1.75;color:var(--grey-body);margin-bottom:14px}
+.policy-section p:last-child{margin-bottom:0}
+.policy-section ul{list-style:none;display:flex;flex-direction:column;gap:10px;margin:14px 0}
+.policy-section li{padding-left:20px;position:relative;font-size:16px;line-height:1.65;color:var(--grey-body)}
+.policy-section li::before{content:"";position:absolute;left:0;top:10px;width:8px;height:2px;background:var(--red)}
+.policy-section strong{font-weight:700;color:var(--black)}
+.highlight-box{background:var(--white-soft);border-left:3px solid var(--red);padding:18px 22px;border-radius:0 8px 8px 0;margin:20px 0;font-size:15px;color:var(--grey-body);line-height:1.7}
+/* FOOTER */
+footer{background:#0d0d0d;border-top:1px solid var(--border-dark);padding:64px 0 36px;color:#c0c0c8}
+.footer__top{display:grid;grid-template-columns:1fr;gap:40px;padding-bottom:48px;border-bottom:1px solid var(--border-dark)}
+@media(min-width:640px){.footer__top{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:900px){.footer__top{grid-template-columns:1.4fr 1fr 1fr 1fr}}
+.footer__brand p{font-size:13px;line-height:1.65;color:var(--grey-muted);max-width:340px;margin-top:14px}
+footer h5{font-family:var(--font-mono);font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--red);margin-bottom:16px}
+footer ul{list-style:none;display:flex;flex-direction:column;gap:10px;font-size:13px}
+footer ul a{color:#b0b0b8;transition:color .15s}
+footer ul a:hover{color:#fff}
+.footer__bottom{display:flex;justify-content:space-between;gap:16px;padding-top:28px;flex-wrap:wrap;font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;color:var(--grey-faint);text-transform:uppercase}
+.footer__bottom a,.footer__locs a{color:var(--grey-faint);transition:color .15s}
+.footer__bottom a:hover,.footer__locs a:hover{color:rgba(255,255,255,.6)}
+.skip{position:absolute;left:-9999px;top:0;background:var(--red);color:#fff;padding:10px 16px;z-index:9999}
+.skip:focus{left:12px;top:12px}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="site-nav">
+  <div class="wrap">
+    <div class="nav__inner">
+      <a href="index.html" class="nav-logo" aria-label="VENISO – Home">
+        <img src="assets/web/veniso_logo.png" alt="VENISO" width="140" height="29" loading="eager">
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html#business">Business</a>
+        <a href="index.html#moitribe">MOITRIBE</a>
+        <a href="index.html#mhealth">M-Health</a>
+        <a href="index.html#mudgames">MUDGAMES</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact" style="background:var(--red);color:#fff;padding:9px 18px;border-radius:100px;font-size:11px">Contact</a>
+      </nav>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-mobile">Menu</button>
+    </div>
+    <nav class="nav__mobile" id="nav-mobile">
+      <a href="index.html#business">Business</a>
+      <a href="index.html#moitribe">MOITRIBE</a>
+      <a href="index.html#mhealth">M-Health</a>
+      <a href="index.html#mudgames">MUDGAMES</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span>›</span>Privacy Policy
+    </div>
+    <h1>Privacy Notice</h1>
+    <p class="meta">Last updated: June 04, 2020 · VENISO Solutions Private Limited</p>
+  </div>
+</div>
+
+<main id="main">
+  <div class="content-wrap">
+
+    <div class="highlight-box">
+      Thank you for choosing to be part of our community at VENISO Solutions Private Limited ("Company", "we", "us", or "our"). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this notice, please contact us at <a href="mailto:support@veniso.com">support@veniso.com</a>.
+    </div>
+
+    <p style="font-size:16px;line-height:1.75;color:var(--grey-body);margin-bottom:14px">When you visit our website <a href="https://veniso.com">veniso.com</a> and use our services, you trust us with your personal information. We take your privacy very seriously. In this privacy notice, we explain what information we collect, how we use it, and what rights you have in relation to it.</p>
+    <p style="font-size:16px;line-height:1.75;color:var(--grey-body);margin-bottom:40px">This privacy notice applies to all information collected through our website and any related services, sales, marketing or events (collectively referred to as the "Services").</p>
+
+    <div class="toc" aria-label="Table of contents">
+      <h2>Table of Contents</h2>
+      <ol>
+        <li><a href="#s1">What Information Do We Collect?</a></li>
+        <li><a href="#s2">Will Your Information Be Shared With Anyone?</a></li>
+        <li><a href="#s3">Do We Use Cookies and Other Tracking Technologies?</a></li>
+        <li><a href="#s4">How Long Do We Keep Your Information?</a></li>
+        <li><a href="#s5">How Do We Keep Your Information Safe?</a></li>
+        <li><a href="#s6">Do We Collect Information From Minors?</a></li>
+        <li><a href="#s7">What Are Your Privacy Rights?</a></li>
+        <li><a href="#s8">Controls for Do-Not-Track Features</a></li>
+        <li><a href="#s9">Do California Residents Have Specific Privacy Rights?</a></li>
+        <li><a href="#s10">Do We Make Updates to This Policy?</a></li>
+        <li><a href="#s11">How Can You Contact Us About This Policy?</a></li>
+      </ol>
+    </div>
+
+    <div class="policy-section" id="s1">
+      <h2>1. What Information Do We Collect?</h2>
+      <p>We do not collect any personal information beyond what is strictly necessary to provide our services. Any information shared with us in the course of using our platforms is handled in accordance with this notice.</p>
+    </div>
+
+    <div class="policy-section" id="s2">
+      <h2>2. Will Your Information Be Shared With Anyone?</h2>
+      <p><strong>In Short:</strong> We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfil business obligations.</p>
+      <p>We may process or share data based on the following legal basis:</p>
+      <ul>
+        <li><strong>Consent:</strong> We may process your data if you have given us specific consent to use your personal information for a specific purpose.</li>
+        <li><strong>Legitimate Interests:</strong> We may process your data when it is reasonably necessary to achieve our legitimate business interests.</li>
+        <li><strong>Performance of a Contract:</strong> Where we have entered into a contract with you, we may process your personal information to fulfil the terms of our contract.</li>
+        <li><strong>Legal Obligations:</strong> We may disclose your information where we are legally required to do so in order to comply with applicable law, governmental requests, a judicial proceeding, court order, or legal process.</li>
+        <li><strong>Vital Interests:</strong> We may disclose your information where we believe it is necessary to investigate, prevent, or take action regarding potential violations of our policies, suspected fraud, or situations involving potential threats to the safety of any person.</li>
+      </ul>
+      <p>More specifically, we may need to share your personal information in the following situations:</p>
+      <ul>
+        <li><strong>Vendors, Consultants and Other Third-Party Service Providers:</strong> We may share your data with third-party vendors and service providers who perform services on our behalf — including payment processing, data analysis, email delivery, hosting services and marketing efforts.</li>
+        <li><strong>Business Transfers:</strong> We may share or transfer your information in connection with any merger, sale of company assets, financing, or acquisition of all or a portion of our business.</li>
+        <li><strong>Third-Party Advertisers:</strong> We may use third-party advertising companies to serve ads when you visit our Services. These companies may use tracking technologies to provide interest-based advertisements.</li>
+      </ul>
+    </div>
+
+    <div class="policy-section" id="s3">
+      <h2>3. Do We Use Cookies and Other Tracking Technologies?</h2>
+      <p><strong>In Short:</strong> We may use cookies and other tracking technologies to collect and store your information.</p>
+      <p>We may use cookies and similar tracking technologies (like web beacons and pixels) to access or store information. Specific information about how we use such technologies and how you can refuse certain cookies is set out in our <a href="cookies.html">Cookie Policy</a>.</p>
+    </div>
+
+    <div class="policy-section" id="s4">
+      <h2>4. How Long Do We Keep Your Information?</h2>
+      <p><strong>In Short:</strong> We keep your information for as long as necessary to fulfil the purposes outlined in this privacy notice unless otherwise required by law.</p>
+      <p>We will only keep your personal information for as long as it is necessary for the purposes set out in this notice, unless a longer retention period is required by law. No purpose in this policy will require us keeping your personal information for longer than 90 days.</p>
+      <p>When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymise it, or, if this is not possible, securely store it and isolate it from further processing until deletion is possible.</p>
+    </div>
+
+    <div class="policy-section" id="s5">
+      <h2>5. How Do We Keep Your Information Safe?</h2>
+      <p><strong>In Short:</strong> We aim to protect your personal information through a system of organisational and technical security measures.</p>
+      <p>We have implemented appropriate technical and organisational security measures designed to protect the security of any personal information we process. VENISO Solutions Private Limited is ISO 27001 certified, reflecting our commitment to information security.</p>
+      <p>However, please also remember that we cannot guarantee that the internet itself is 100% secure. Transmission of personal information to and from our Services is at your own risk. You should only access the services within a secure environment.</p>
+    </div>
+
+    <div class="policy-section" id="s6">
+      <h2>6. Do We Collect Information From Minors?</h2>
+      <p><strong>In Short:</strong> We do not knowingly collect data from or market to children under 18 years of age.</p>
+      <p>We do not knowingly solicit data from or market to children under 18 years of age. By using the Services, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent's use of the Services.</p>
+      <p>If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we have collected from children under age 18, please contact us at <a href="mailto:support@veniso.com">support@veniso.com</a>.</p>
+    </div>
+
+    <div class="policy-section" id="s7">
+      <h2>7. What Are Your Privacy Rights?</h2>
+      <p><strong>In Short:</strong> In some regions, such as the European Economic Area, you have rights that allow you greater access to and control over your personal information.</p>
+      <p>In some regions (like the European Economic Area), you have certain rights under applicable data protection laws, including the right to: request access to and obtain a copy of your personal information; request rectification or erasure; restrict the processing of your personal information; and, if applicable, to data portability. In certain circumstances, you may also have the right to object to the processing of your personal information.</p>
+      <p>If we are relying on your consent to process your personal information, you have the right to withdraw your consent at any time. Please note however that this will not affect the lawfulness of the processing before its withdrawal.</p>
+      <p>If you are a resident of the European Economic Area and believe we are unlawfully processing your personal information, you have the right to complain to your local data protection supervisory authority. Details are available at <a href="http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm" rel="noopener noreferrer" target="_blank">ec.europa.eu</a>.</p>
+      <p>To opt-out of interest-based advertising by advertisers on our Services, visit <a href="http://www.aboutads.info/choices/" rel="noopener noreferrer" target="_blank">aboutads.info/choices</a>.</p>
+    </div>
+
+    <div class="policy-section" id="s8">
+      <h2>8. Controls for Do-Not-Track Features</h2>
+      <p>Most web browsers and some mobile operating systems include a Do-Not-Track ("DNT") feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. No uniform technology standard for recognising and implementing DNT signals has been finalised. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this privacy notice.</p>
+    </div>
+
+    <div class="policy-section" id="s9">
+      <h2>9. Do California Residents Have Specific Privacy Rights?</h2>
+      <p><strong>In Short:</strong> Yes, if you are a resident of California, you are granted specific rights regarding access to your personal information.</p>
+      <p>California Civil Code Section 1798.83, also known as the "Shine The Light" law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes.</p>
+      <p>If you are under 18 years of age, reside in California, and have a registered account with the Services, you have the right to request removal of unwanted data that you publicly post on the Services. To request removal of such data, please contact us at <a href="mailto:support@veniso.com">support@veniso.com</a>, and include the email address associated with your account and a statement that you reside in California.</p>
+    </div>
+
+    <div class="policy-section" id="s10">
+      <h2>10. Do We Make Updates to This Policy?</h2>
+      <p><strong>In Short:</strong> Yes, we will update this policy as necessary to stay compliant with relevant laws.</p>
+      <p>We may update this privacy notice from time to time. The updated version will be indicated by an updated "Last updated" date and will be effective as soon as it is accessible. If we make material changes to this privacy notice, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this privacy notice frequently to be informed of how we are protecting your information.</p>
+    </div>
+
+    <div class="policy-section" id="s11">
+      <h2>11. How Can You Contact Us About This Policy?</h2>
+      <p>If you have questions or comments about this policy, you may email us at <a href="mailto:support@veniso.com">support@veniso.com</a> or write to us at:</p>
+      <div class="highlight-box" style="margin-top:16px">
+        <strong>VENISO Solutions Private Limited</strong><br>
+        2nd Floor, 1-98/5/2/1, Block-B, Eternal Samyuktha<br>
+        Vittal Rao Nagar, Madhapur<br>
+        Hyderabad, Telangana — 500081, India<br><br>
+        <a href="mailto:support@veniso.com">support@veniso.com</a> &nbsp;·&nbsp; <a href="mailto:business@veniso.com">business@veniso.com</a>
+      </div>
+      <p style="margin-top:20px">Based on the laws of some countries, you may have the right to request access to the personal information we collect from you, change that information, or delete it in some circumstances. To request a review, update, or deletion, please email us at <a href="mailto:support@veniso.com">support@veniso.com</a>. We will respond to your request within 30 days.</p>
+    </div>
+
+  </div>
+</main>
+
+<footer role="contentinfo">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="index.html"><img src="assets/web/veniso_logo.png" alt="VENISO" width="120" height="25" loading="lazy" style="height:28px;width:auto;opacity:.9"></a>
+        <p>Proprietary platforms for telecom operators and consumer services. Built in-house since 2012.</p>
+      </div>
+      <div>
+        <h5>Business</h5>
+        <ul>
+          <li><a href="index.html#business">Managed SaaS</a></li>
+          <li><a href="index.html#moitribe">MOITRIBE</a></li>
+          <li><a href="index.html#mhealth">M-Health</a></li>
+          <li><a href="index.html#mudgames">MUDGAMES</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+          <li><a href="sitemap.xml">Sitemap</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="mailto:business@veniso.com">business@veniso.com</a></li>
+          <li><a href="https://www.linkedin.com/company/veniso" rel="noopener noreferrer" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div>© <span id="year">2026</span> <a href="https://veniso.com">VENISO Solutions Pvt Ltd</a> · <a href="https://www.mca.gov.in" rel="noopener noreferrer" target="_blank">CIN U72200TG2012PTC082758</a></div>
+      <div class="footer__locs">
+        <a href="https://maps.google.com/?q=Madhapur+Hyderabad" rel="noopener noreferrer" target="_blank">Hyderabad</a> ·
+        <a href="https://maps.google.com/?q=New+Delhi+India" rel="noopener noreferrer" target="_blank">New Delhi</a> ·
+        <a href="https://maps.google.com/?q=Mumbai+India" rel="noopener noreferrer" target="_blank">Mumbai</a> ·
+        <a href="https://maps.google.com/?q=Dubai+UAE" rel="noopener noreferrer" target="_blank">Dubai</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var t=document.querySelector('.nav__toggle'),m=document.getElementById('nav-mobile');
+  if(t&&m){t.addEventListener('click',function(){var o=m.classList.toggle('is-open');t.setAttribute('aria-expanded',String(o));t.textContent=o?'Close':'Menu'});
+  m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('is-open');t.setAttribute('aria-expanded','false');t.textContent='Menu'})})}
+  var y=document.getElementById('year');if(y)y.textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
