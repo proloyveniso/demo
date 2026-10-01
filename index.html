@@ -345,11 +345,30 @@ footer ul a:hover{color:#fff}
 .skip{position:absolute;left:-9999px;top:0;background:var(--red);color:#fff;padding:10px 16px;z-index:9999;font-size:14px}
 .skip:focus{left:12px;top:12px}
 
+/* ── MUDGAMES FEATURE CARDS ─────────────────────── */
+.mud-feats{display:grid;grid-template-columns:1fr;gap:2px;margin-bottom:2px}
+@media(min-width:640px){.mud-feats{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.mud-feats{grid-template-columns:repeat(3,1fr)}}
+.mud-feat{background:var(--white-soft);border:1px solid var(--border-light);border-radius:var(--radius);padding:28px 28px 32px;transition:box-shadow .2s var(--ease)}
+.mud-feat:hover{box-shadow:0 8px 32px rgba(0,0,0,.08)}
+.mud-feat__icon{width:48px;height:48px;background:var(--black);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.mud-feat__icon svg{width:22px;height:22px;stroke:var(--red);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.mud-feat__tag{font-family:var(--font-mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-bottom:8px;display:block}
+.mud-feat__title{font-size:18px;font-weight:800;letter-spacing:-.01em;color:var(--black);margin-bottom:10px}
+.mud-feat__body{font-size:14px;line-height:1.7;color:var(--grey-body)}
+/* Platform badges */
+.mud-platform{display:flex;flex-wrap:wrap;gap:8px;margin:32px 0 36px}
+.mud-platform__badge{font-family:var(--font-mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;padding:7px 16px;border:1.5px solid var(--border-light);border-radius:100px;color:var(--grey-body);background:var(--white)}
+/* Mini game strip */
+.game-shots-mini{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;border-radius:14px;overflow:hidden;margin-bottom:8px}
+@media(min-width:768px){.game-shots-mini{grid-template-columns:repeat(6,1fr)}}
+.game-shots-mini .game-shot__img{aspect-ratio:1/1;width:100%;object-fit:cover;display:block;transition:transform .4s var(--ease)}
+.game-shots-mini .game-shot:hover .game-shot__img{transform:scale(1.05)}
 /* ── MUDGAMES STATS STRIP ────────────────────────── */
-.mud-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--red);border-radius:var(--radius);overflow:hidden;margin-top:44px}
-@media(max-width:500px){.mud-stats{grid-template-columns:1fr}}
+.mud-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:var(--red);border-radius:var(--radius);overflow:hidden;margin-top:36px}
+@media(min-width:640px){.mud-stats{grid-template-columns:repeat(4,1fr)}}
 .mud-stat{background:var(--red);padding:24px;text-align:center}
-.mud-stat .val{font-size:clamp(28px,2.8vw,44px);font-weight:900;color:#fff;letter-spacing:-.02em}
+.mud-stat .val{font-size:clamp(24px,2.4vw,40px);font-weight:900;color:#fff;letter-spacing:-.02em}
 .mud-stat .lbl{font-family:var(--font-mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.75);margin-top:6px}
 
 /* ── REVEAL ANIMATIONS ───────────────────────────── */
@@ -649,41 +668,108 @@ footer ul a:hover{color:#fff}
 <section class="section section--light" id="mudgames" aria-labelledby="mud-heading">
   <div class="wrap">
     <div class="section__head">
-      <div class="eyebrow">04 · Consumer · Casual Gaming</div>
-      <div class="right">MUDGAMES · Ad-Powered · 127 Titles</div>
+      <div class="eyebrow">04 · Consumer · Gaming Platform for Engagement</div>
+      <div class="right">MUDGAMES · Powered by MOITRIBE Engine</div>
     </div>
-    <h2 class="h-lead reveal" id="mud-heading">MUDGAMES — hyper-casual gaming, powered by advertising. No download. No subscription.</h2>
-    <p class="body reveal reveal-delay-1" style="max-width:960px;margin-bottom:44px">A browser-native catalogue of 140+ titles across 9 genres. Playable instantly on any device, any network, with no install and no store. Monetised entirely through in-game advertising — so the play is free and the funnel is bottomless.</p>
-  </div>
+    <h2 class="h-lead reveal" id="mud-heading">MUDGAMES — 140+ games. One multiplayer engine. Zero downloads.</h2>
+    <p class="body reveal reveal-delay-1" style="max-width:960px;margin-bottom:44px">Built on VENISO's proprietary MOITRIBE multiplayer engine, MUDGAMES is more than a game catalogue. Real-time and turn-based multiplayer, tournament infrastructure, private friend rooms and network resilience — all running instantly in a browser or Android app. Free to play, ad-monetised, and operator-ready.</p>
 
-  <!-- Featured Game Screenshots -->
-  <div class="wrap">
-    <div class="game-shots reveal reveal-delay-2">
+    <!-- Platform Feature Grid -->
+    <div class="mud-feats reveal reveal-delay-2">
+
+      <div class="mud-feat">
+        <div class="mud-feat__icon">
+          <svg viewBox="0 0 24 24"><polyline points="13 2 13 9 20 9"/><polyline points="11 22 11 15 4 15"/><line x1="20" y1="9" x2="12" y2="17"/><line x1="4" y1="15" x2="12" y2="7"/></svg>
+        </div>
+        <span class="mud-feat__tag">Multiplayer · Live</span>
+        <div class="mud-feat__title">Real-Time Multiplayer</div>
+        <p class="mud-feat__body">Live head-to-head gameplay with sub-second sync. Players compete simultaneously and see each other move in real time — no polling, no lag workarounds.</p>
+      </div>
+
+      <div class="mud-feat">
+        <div class="mud-feat__icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 8 14"/></svg>
+        </div>
+        <span class="mud-feat__tag">Multiplayer · Async</span>
+        <div class="mud-feat__title">Turn-Based Multiplayer</div>
+        <p class="mud-feat__body">Async competitive play across sessions. Players take turns on their own time — ideal for board, strategy and card titles played across time zones.</p>
+      </div>
+
+      <div class="mud-feat">
+        <div class="mud-feat__icon">
+          <svg viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg>
+        </div>
+        <span class="mud-feat__tag">Competitive · Individual</span>
+        <div class="mud-feat__title">Score-Based Tournaments</div>
+        <p class="mud-feat__body">Individual leaderboard tournaments with auto-ranking and configurable play windows. Run daily, weekly or event-based — players chase the top spot solo.</p>
+      </div>
+
+      <div class="mud-feat">
+        <div class="mud-feat__icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <span class="mud-feat__tag">Competitive · Squad</span>
+        <div class="mud-feat__title">Team Score Tournaments</div>
+        <p class="mud-feat__body">Squad-based events where team aggregate scores decide the winner. Supports group formation, team leaderboards and co-op scoring logic across titles.</p>
+      </div>
+
+      <div class="mud-feat">
+        <div class="mud-feat__icon">
+          <svg viewBox="0 0 24 24"><path d="M1.05 12a11 11 0 0 1 21.9 0"/><path d="M5 12a7 7 0 0 1 14 0"/><path d="M9 12a3 3 0 0 1 6 0"/><circle cx="12" cy="12" r="1" fill="var(--red)" stroke="none"/></svg>
+        </div>
+        <span class="mud-feat__tag">Infrastructure · Resilience</span>
+        <div class="mud-feat__title">Low-Bandwidth Resilience</div>
+        <p class="mud-feat__body">Engineered for emerging markets. The engine stays connected and synced under mid-to-high latency and poor signal — no dropped sessions, no broken rooms.</p>
+      </div>
+
+      <div class="mud-feat">
+        <div class="mud-feat__icon">
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <span class="mud-feat__tag">Social · Rooms</span>
+        <div class="mud-feat__title">Private Game Rooms</div>
+        <p class="mud-feat__body">Players invite friends directly into a named room with a shareable code. No matchmaking queue — just play with people you know, on any device, instantly.</p>
+      </div>
+
+    </div>
+
+    <!-- Platform support badges -->
+    <div class="mud-platform reveal">
+      <span class="mud-platform__badge">HTML5 · Any Browser</span>
+      <span class="mud-platform__badge">Android App</span>
+      <span class="mud-platform__badge">Operator-Billed</span>
+      <span class="mud-platform__badge">Ad-Supported</span>
+      <span class="mud-platform__badge">Zero Downloads Required</span>
+    </div>
+
+    <!-- Mini game shots strip -->
+    <div class="game-shots-mini reveal reveal-delay-1">
       <div class="game-shot">
-        <img src="assets/web/road_rush_3d.webp" alt="Road Rush 3D – dodge, escape, survive racing game" class="game-shot__img" loading="lazy" width="480" height="480">
-        <div class="game-shot__label">Road Rush 3D<span class="game-shot__genre">Racing · Dodge &amp; Survive</span></div>
+        <img src="assets/web/road_rush_3d.webp" alt="Road Rush 3D" class="game-shot__img" loading="lazy" width="240" height="240">
+        <div class="game-shot__label">Road Rush 3D<span class="game-shot__genre">Racing</span></div>
       </div>
       <div class="game-shot">
-        <img src="assets/web/mini_golf.webp" alt="Mini Golf – casual golf game" class="game-shot__img" loading="lazy" width="480" height="480">
-        <div class="game-shot__label">Mini Golf<span class="game-shot__genre">Sports · Casual</span></div>
+        <img src="assets/web/mini_golf.webp" alt="Mini Golf" class="game-shot__img" loading="lazy" width="240" height="240">
+        <div class="game-shot__label">Mini Golf<span class="game-shot__genre">Sports</span></div>
       </div>
       <div class="game-shot">
-        <img src="assets/web/mini_mobile_soccer_new.webp" alt="Mini Mobile Soccer – football game" class="game-shot__img" loading="lazy" width="480" height="480">
-        <div class="game-shot__label">Mini Mobile Soccer<span class="game-shot__genre">Sports · Multiplayer</span></div>
+        <img src="assets/web/mini_mobile_soccer_new.webp" alt="Mini Mobile Soccer" class="game-shot__img" loading="lazy" width="240" height="240">
+        <div class="game-shot__label">Mini Soccer<span class="game-shot__genre">Multiplayer</span></div>
       </div>
       <div class="game-shot">
-        <img src="assets/web/moto_madness.webp" alt="Moto Madness – dirt bike racing game" class="game-shot__img" loading="lazy" width="480" height="480">
-        <div class="game-shot__label">Moto Madness<span class="game-shot__genre">Racing · Dirt Bike</span></div>
+        <img src="assets/web/moto_madness.webp" alt="Moto Madness" class="game-shot__img" loading="lazy" width="240" height="240">
+        <div class="game-shot__label">Moto Madness<span class="game-shot__genre">Racing</span></div>
       </div>
       <div class="game-shot">
-        <img src="assets/web/far_furious_road.webp" alt="Far and Furious Road – top-down car combat" class="game-shot__img" loading="lazy" width="480" height="480">
-        <div class="game-shot__label">Far &amp; Furious Road<span class="game-shot__genre">Action · Car Combat</span></div>
+        <img src="assets/web/far_furious_road.webp" alt="Far &amp; Furious Road" class="game-shot__img" loading="lazy" width="240" height="240">
+        <div class="game-shot__label">Far &amp; Furious<span class="game-shot__genre">Action</span></div>
       </div>
       <div class="game-shot">
-        <img src="assets/web/formula_speed.webp" alt="Formula Speed – F1 style racing game" class="game-shot__img" loading="lazy" width="480" height="480">
-        <div class="game-shot__label">Formula Speed<span class="game-shot__genre">Racing · Formula</span></div>
+        <img src="assets/web/formula_speed.webp" alt="Formula Speed" class="game-shot__img" loading="lazy" width="240" height="240">
+        <div class="game-shot__label">Formula Speed<span class="game-shot__genre">Racing</span></div>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -785,8 +871,9 @@ footer ul a:hover{color:#fff}
     </div>
 
     <div class="mud-stats reveal reveal-delay-2">
-      <div class="mud-stat"><div class="val" data-count="140" data-suffix="+">140+</div><div class="lbl">Total Titles</div></div>
+      <div class="mud-stat"><div class="val" data-count="140" data-suffix="+">140+</div><div class="lbl">Game Titles</div></div>
       <div class="mud-stat"><div class="val">9</div><div class="lbl">Genres</div></div>
+      <div class="mud-stat"><div class="val" data-count="2.5" data-suffix="Mn">2.5Mn</div><div class="lbl">Multiplayer Rooms / Day</div></div>
       <div class="mud-stat"><div class="val">0</div><div class="lbl">Downloads Required</div></div>
     </div>
   </div>
